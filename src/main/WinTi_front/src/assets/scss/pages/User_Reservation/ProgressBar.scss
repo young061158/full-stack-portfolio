@@ -1,0 +1,20 @@
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+
+    .step {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        background-color: #e0e0e0;
+        transition: background-color 0.3s;
+        margin: 5px;
+    }
+
+    .step.active {
+        background-color: #7b41f2;
+        color: white;
+    }
+}

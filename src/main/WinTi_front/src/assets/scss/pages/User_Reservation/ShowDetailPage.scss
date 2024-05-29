@@ -1,0 +1,305 @@
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .showDetail-main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 40px;
+    }
+
+    .view-about {
+        border-bottom: 1px solid #3D3A35;
+    }
+
+    .poster-title-container {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 40px;
+    }
+
+    .poster {
+        width: 405px;
+        height: 600px;
+        border-radius: 5px;
+        margin-right: 40px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main-Title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 35px;
+        color: #3D3A35;
+        border-bottom: 3px solid #777777;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .information-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .Information,
+    .view-about,
+    .etc-price {
+        display: flex;
+        flex-direction: row;
+
+
+
+        .Information span,
+        .view-about span,
+        .etc-price span {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+        }
+
+        .area-title,
+        .date-main,
+        .run-time,
+        .etc,
+        .seat-VIP-price,
+        .seat-R,
+        .seat-S {
+            color: #3D3A35;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+
+        .price-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            align-items: start;
+            gap: 20px;
+        }
+    }
+
+    .price-section .price-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-section .price-details .etc-price {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .price-sail {
+
+        justify-content: space-between;
+        /* Space items evenly */
+        width: 100%;
+    }
+
+    .sail-item {
+        display: flex;
+        flex-direction: column;
+        /* Stack label and value vertically */
+        margin-right: 20px;
+        /* Add space between items */
+    }
+
+    .sails {
+        font-weight: bold;
+        margin-bottom: 5px;
+        /* Space between label and value */
+    }
+
+    .sails-price {
+        font-size: 16px;
+        /* Adjust as needed for readability */
+    }
+
+    .DateSelect-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        /* Make columns stretch to the same height */
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+
+
+    .column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-between; /* Space out items within the column */
+        text-align: center;
+        padding: 20px;
+        position: relative;
+
+
+    }
+
+    .column::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #ddd;
+    }
+
+
+    .column:last-child::after {
+        display: none;
+    }
+
+    .Calendar {
+        width: 100%;
+        max-width: 250px;
+        /* Adjust the width to make the calendar smaller */
+    }
+
+    // .selection-container {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: flex-start;
+
+    //     margin-right: 40px;
+    // }
+
+    .selection-container label {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .show-date-select,
+    .show-session-select,
+    .show-remaining-seat {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    .session-button {
+        width: 100%;
+        height: 50px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        border: 1px solid #777777;
+        background: #FFFFFF;
+        color: #777777;
+    }
+
+    .session-button.active {
+        background: #EFE6FF;
+        border: 1px solid #7D3EF7;
+        color: #7D3EF7;
+    }
+
+
+
+    .seating,
+    .seating2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3D3A35;
+        margin-top: 30px;
+        text-align: left;
+        /* Align text to the left */
+        width: 100%;
+        /* Ensure the labels take full width */
+        padding-left: 20px;
+        /* Add some padding to the left for better alignment */
+    }
+
+    .Rectangle53 {
+        width: 100%;
+        height: 50px;
+        background: #7D3EF7;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+
+    .tab-container {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 40px;
+        background: #FFFFFF;
+        border: 1px solid #777777;
+        border-radius: 8px;
+    }
+
+    .tab-button {
+        flex-grow: 1;
+        text-align: center;
+        padding: 20px 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+
+    .tab-button:hover {
+        background-color: #e0e0e0;
+    }
+
+    .tab-button.active {
+        color: #6200EA;
+        font-weight: bold;
+    }
+
+    .tab-button.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #6200EA;
+    }
+
+    .banner-component {
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 20px;
+        background: #FFFFFF;
+        border: 1px solid #777777;
+        padding: 20px;
+    }
+}

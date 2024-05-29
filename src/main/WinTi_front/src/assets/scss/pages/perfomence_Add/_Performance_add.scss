@@ -1,0 +1,30 @@
+.add-container {
+    width: 100%;
+    position: relative;
+    margin: 150px auto;
+
+    .addTitle {
+        position: absolute;
+        left: 10%;
+    }
+
+    .addTop {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .showInfoUpload {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: #8A4AED;
+        border-radius: 5px;
+        margin: 10px;
+        margin-bottom: 100px;
+        cursor: pointer;
+    }
+}

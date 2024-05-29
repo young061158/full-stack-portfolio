@@ -1,0 +1,128 @@
+.Disable_User{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    h1{
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .text_1{
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 15px;
+        .Circle {
+            width: 15px; /* 원의 너비 */
+            height: 15px; /* 원의 높이 */
+            background-color: purple; /* 배경색을 보라색으로 설정 */
+            border-radius: 50%; /* 원 모양으로 만들기 위해 반지름을 50%로 설정 */
+
+          }
+
+          .text_one{
+            margin-left: 5px;
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+    }
+
+    .text_one_1{
+        margin-bottom: 60px;
+    }
+
+    .text_2{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        .Circle {
+            width: 15px; /* 원의 너비 */
+            height: 15px; /* 원의 높이 */
+            background-color: purple; /* 배경색을 보라색으로 설정 */
+            border-radius: 50%; /* 원 모양으로 만들기 위해 반지름을 50%로 설정 */
+
+          }
+
+          .text_two{
+            margin-left: 5px;
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+    }
+    .text_one_2{
+        margin-bottom: 60px;
+    }
+
+    .lien {
+        width: 80%; /* 가로 길이 */
+        height: 1px; /* 세로 높이 */
+        background-color: black; /* 선 색상 */
+        margin: 20px 0; /* 위아래 여백 */
+        margin-bottom: 60px;
+      }
+
+    .last_text{
+        color: red;
+        margin-bottom: 60px;
+    }
+
+    .you_ok{
+    
+        margin-top: 30px;
+
+        .checkbox-label {
+            font-size: 15px;
+            margin-left: 15px;
+          }
+          
+          /* 체크박스 크기 조정 */
+          .checkbox-input {
+            transform: scale(1.5);
+          }
+
+
+    
+    }
+
+        
+    .button-container {
+        margin-top: 60px;
+        text-align: center; /* 버튼을 가운데 정렬합니다. */
+      }
+      
+      .active {
+        padding: 10px 20px; /* 버튼 내부 여백을 추가합니다. */
+        font-size: 16px; /* 버튼 텍스트 크기를 설정합니다. */
+        background-color: hsl(288, 50%, 39%); /* 배경색을 파란색으로 지정합니다. */
+        color: #fff; /* 텍스트 색상을 흰색으로 지정합니다. */
+        border: none; /* 테두리를 없앱니다. */
+        border-radius: 5px; /* 버튼을 둥글게 만듭니다. */
+        cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능함을 나타냅니다. */
+      }
+      
+      .active {
+        background-color: hsl(308, 79%, 28%); /* 마우스를 올렸을 때 배경색을 어둡게 변경합니다. */
+    }   
+
+    .inactive {
+        padding: 10px 20px; /* 버튼 내부 여백을 추가합니다. */
+        font-size: 16px; /* 버튼 텍스트 크기를 설정합니다. */
+        background-color: rgb(243, 226, 226); /* 배경색을 파란색으로 지정합니다. */
+        color: hsl(0, 0%, 100%); /* 텍스트 색상을 흰색으로 지정합니다. */
+        border: none; /* 테두리를 없앱니다. */
+        border-radius: 5px; /* 버튼을 둥글게 만듭니다. */
+    
+      }
+      
+    .inactive {
+        background-color: hwb(0 60% 33%); /* 마우스를 올렸을 때 배경색을 어둡게 변경합니다. */
+    }   
+
+}

@@ -1,0 +1,127 @@
+.modalActcontainer {
+    max-width: 600px;
+    height: 590px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+
+    .slides-container {
+        height: 600px;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+
+    .slide {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .slide img {
+        width: 150px;
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    .slide p {
+        margin: 0;
+    }
+
+    .slide button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+        background-color: red;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 590px;
+        position: absolute;
+        top: 12%;
+    }
+
+    .nav-buttons button {
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .inputImg {
+        border-top: 3px solid black;
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        top: 60%;
+        /* 모달의 상단에 위치하기 위해 상단으로 이동 */
+        left: 50%;
+        /* 가운데 정렬을 위해 왼쪽으로 이동 */
+        transform: translateY(-30%) translateX(-50%);
+        /* 가운데 정렬 */
+    }
+
+    .file-input {
+        display: inline-block;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .file-input input[type="file"] {
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .file-input .inputFile {
+        width: 180px;
+        height: 200px;
+        cursor: pointer;
+        font-size: 100px;
+        text-align: center;
+        line-height: 160px;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        margin-top: 5px;
+        border: 1px solid #8a4aed;
+        background-color: #ccc;
+    }
+
+    .actorInfo {
+        width: 400px;
+        position: absolute;
+        left: 40%;
+        top: 0;
+
+        .actorInfoInput {
+            width: 365px;
+            height: 35px;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .actorSumit {
+            width: 365px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+
+    .ActInfosumit {
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+    }
+}

@@ -1,0 +1,155 @@
+.MainBannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .mainBannerCategory {
+        margin-bottom: 10px;
+    }
+
+    .mainBannerCategory button {
+        margin-right: 10px;
+        margin-top: 80px;
+        width: 90px;
+        height: 35px;
+        padding: 5px 10px;
+        background-color: hwb(0 64% 36%);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .mainBannerCategory button.selected {
+        background-color: #8a4aed;
+    }
+
+    table {
+        width: 1100px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border-bottom: 1px solid hsl(0, 1%, 57%);
+        text-align: center;
+        /* 텍스트 중앙 정렬 추가 */
+    }
+
+    th {
+        background-color: hsl(0, 0%, 73%);
+        color: hwb(0 0% 100%);
+    }
+
+    .performanceItem {
+        margin-bottom: 20px;
+    }
+
+    .performanceItem img {
+        width: 100%;
+        height: 150px;
+        object-fit: fill;
+    }
+
+    .performanceItem h3 {
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 20px;
+        background-color: #8a4aed;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #6c32a8;
+    }
+
+    /* 체크박스 스타일 */
+    input[type="checkbox"] {
+        width: 20px;
+        /* 체크박스 너비 조정 */
+        height: 20px;
+        /* 체크박스 높이 조정 */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #8a4aed;
+        /* 체크박스 테두리 스타일 */
+        border-radius: 5px;
+        /* 체크박스 테두리 둥글게 */
+        outline: none;
+        cursor: pointer;
+    }
+
+    /* 체크박스 활성화 상태 */
+    input[type="checkbox"]:checked {
+        background-color: #8a4aed;
+        /* 체크박스 색상 변경 */
+    }
+
+    /* 체크박스 마우스 호버 상태 */
+    input[type="checkbox"]:hover {
+        background-color: #6c32a8;
+        /* 체크박스 호버 시 색상 변경 */
+    }
+
+    /* 체크박스의 스타일을 커스텀하기 위한 가상 요소 */
+    input[type="checkbox"]::before {
+        content: "";
+        /* 가상 요소에 내용 없음 */
+        display: inline-block;
+        width: 10px;
+        /* 체크 박스 크기 조정 */
+        height: 10px;
+        /* 체크 박스 크기 조정 */
+        border: 2px solid #fff;
+        /* 체크 박스 내부 선 스타일 */
+        border-top: none;
+        /* 상단 선 없앰 */
+        border-right: none;
+        /* 우측 선 없앰 */
+        transform: rotate(-46deg);
+        /* 가상 요소 회전하여 화살표 모양 만듦 */
+        position: relative;
+        /* 가상 요소 위치 상대적으로 설정 */
+        top: -2px;
+        /* 가상 요소 위치 조정 */
+        left: 3px;
+        /* 가상 요소 위치 조정 */
+        visibility: hidden;
+        /* 가상 요소 숨김 */
+    }
+
+    /* 체크박스가 체크되었을 때의 가상 요소 */
+    input[type="checkbox"]:checked::before {
+        visibility: visible;
+        /* 가상 요소 표시 */
+    }
+
+
+    /* 검색어 입력창 스타일 */
+    input[type="text"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 180px;
+        border: 2px solid #8a4aed;
+        border-radius: 20px;
+        outline: none;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    /* 검색어 입력창 플레이스홀더 스타일 */
+    input[type="text"]::placeholder {
+        color: #aaa;
+    }
+}

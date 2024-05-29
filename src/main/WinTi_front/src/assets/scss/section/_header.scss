@@ -1,0 +1,144 @@
+.header_All {
+  .header_header {
+    background-color: var(--sub-color);
+    height: 40px;
+    display: flex; // Use flexbox to align items vertically
+
+    .login-signup {
+      display: flex;
+      width: 1205px;
+      margin-left: auto;
+      /* Set left margin to auto */
+      margin-right: auto;
+      align-items: center;
+      justify-content: flex-end;
+
+      p {
+        font-size: 15px;
+        font-weight: 600;
+
+        span {
+          font-size: 12px;
+          margin-left: 2px;
+          margin-right: 25px;
+          font-weight: 600;
+        }
+      }
+
+      a {
+        font-size: 14px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .header_body {
+    height: 75px;
+
+    .logo_search {
+      display: flex;
+      height: 100%;
+      width: 1205px;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+
+      .logo {
+        width: 130px;
+      }
+
+      .search-bar {
+        position: relative;
+
+        svg {
+          position: absolute;
+          width: 23px;
+          right: 10px;
+          top: 2px;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        input[type="text"] {
+          padding: 10px;
+          border: 1px solid rgb(100, 65, 113);
+          border-radius: 20px;
+          /* 둥근 테두리 */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          /* 그림자 효과 */
+          font-size: 16px;
+          height: 35px;
+          /* 높이 조정 */
+          width: 220px;
+          /* 너비 조정 */
+          outline: none;
+          /* 포커스 효과 제거 */
+        }
+
+        input[type="text"]::placeholder {
+          color: #999;
+          /* placeholder 텍스트 색상 */
+        }
+
+        input[type="text"]:focus {
+          border-color: hsl(271, 71%, 38%);
+          /* 클릭 시 테두리 색상 변경 */
+          box-shadow: 0 0 5px #760f9680;
+          /* 클릭 시 그림자 효과 변경 */
+        }
+      }
+    }
+  }
+
+  .header_footer {
+    height: 40px;
+    box-shadow: 0px 5px 5px rgba(219, 206, 206, 0.404),
+      /* Top shadow */
+      0px -5px 5px rgba(219, 206, 206, 0.404);
+    /* Bottom shadow */
+    font-size: 10px;
+
+    .nav {
+      margin-left: auto;
+      margin-right: auto;
+
+      ul {
+        width: 1205px;
+        height: 40px;
+        list-style-type: none; // 목록 기호 제거
+        display: flex;
+        align-items: center;
+        /* 수직 중앙 정렬 */
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+          margin-right: 10px;
+          font-size: 10px;
+
+          .navbar-brand_1 {
+            margin-left: 700px;
+            font-weight: 600;
+          }
+
+          .navbar-brand_2 {
+            font-weight: 600;
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 14px;
+            margin-right: 20px;
+
+            &:hover {
+              color: var(--main-colo);
+            }
+          }
+        }
+      }
+    }
+  }
+}

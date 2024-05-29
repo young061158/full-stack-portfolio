@@ -1,0 +1,73 @@
+// Define variables
+$primary-color: #8A4AED;
+$second-color: #FAF8FF;
+$third-color: #FFFFFF;
+
+
+.round-modal{
+    width: 736px;
+    height: 500px;
+
+    .input-group{
+        display: grid;
+        grid-template-columns: repeat(7, 100px);
+        align-items: center;
+        margin: 20px;
+        .show-time-text,
+        .show-date-text{
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .button-plus{
+            width: 30px;
+            height: 30px;
+            margin: 0 auto;
+        }
+    }
+    .round-table {
+        margin: 0 auto;
+        td{
+            height: 40px;
+        }
+        th,td{
+            text-align: center;
+        }
+        thead{
+            height: 50px;
+            background-color: $primary-color;
+        }
+        tr:nth-child(even) td {
+            background-color: $third-color;
+        }
+        tr:nth-child(odd) td {
+            background-color: $second-color;
+        }
+    
+        // 테이블 th 
+        .th-count{
+            width: 100px;
+        }
+        .th-date{
+            width: 370px;
+        }
+        .th-time{
+            width: 200px;
+        }
+        .th-btn{
+            width: 66px;
+            .btn-delete{
+                width: 66px;
+                height: 30px;
+            }
+        }
+
+        // 테이블 td 
+        .td-x {
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+// CategoryPage.scss
+
+.category-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+
+    .category-content {
+        position: relative;
+
+        .sort-container {
+            position: absolute;
+            top: 0px;
+            right: 20%;
+            z-index: 1000; // 다른 요소 위에 나타나도록 설정
+        }
+
+
+        .category-table {
+            width: 60%;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+
+        .category-table td {
+            height: 270px;
+            padding: 10px;
+            border: none;
+            text-align: center; // 이미지를 가운데로 정렬하기 위해 추가
+        }
+
+        .category-table img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 150px;
+            max-height: 180px;
+        }
+
+        .category-title {
+            font-size: 1.2em;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .category-date {
+            font-size: 0.9em;
+            color: #888;
+        }
+    }
+}

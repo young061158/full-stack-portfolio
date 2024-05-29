@@ -1,0 +1,183 @@
+// Define variables
+$primary-color: #8A4AED;
+$second-color: #EFE6FF;
+$third-color: #F5F3FF;
+$fourth-color: #8C8C8C;
+
+$seat-s : #ffffff;
+$seat-r : #007bff;
+$seat-vip : #ffc107;
+
+
+
+.prev {
+    position: relative;
+    margin-top: 150px;
+
+    .btn-modal {
+        position: relative;
+        left: 80%;
+        width: 100px;
+        height: 30px;
+        margin-bottom: 20px;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .stage-box {
+        margin: 0 auto;
+        background-color: $second-color;
+        width: 800px;
+        height: 600px;
+        border-radius: 16px;
+        padding: 10px;
+        overflow: auto;
+
+        .stage {
+            width: 400px;
+            height: 100px;
+            margin: 40px auto;
+            font-size: 20px;
+            border-radius: 16px;
+            text-align: center;
+            align-content: center;
+            background-color: $fourth-color;
+            color: #ffffff;
+        }
+
+        .seat-prev {
+            position: relative;
+            text-align: center;
+            width: auto;
+
+            .seat.s {
+                background-color: $seat-s;
+                color: black; // For better readability
+            }
+
+            .seat.r {
+                background-color: $seat-r;
+                color: black; // For better readability
+            }
+
+            .seat.vip {
+                background-color: $seat-vip;
+                color: black; // For better readability
+            }
+
+            .seat.empty {
+                background-color: $second-color;
+                color: #EFE6FF; // For better readability
+            }
+
+            .seatInfo {
+                position: absolute;
+                margin: 0px;
+                left: 10px;
+            }
+
+            .seat {
+                display: inline-block;
+                border-radius: 7px;
+                margin: 3px;
+                background: white;
+            }
+
+            .seat-content {
+                display: inline-block;
+                margin: 0px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .round-table {
+        margin: 0 auto;
+
+        th {
+            color: #F5F3FF;
+            font-weight: 300;
+        }
+
+        td {
+            height: 30px;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        thead {
+            height: 50px;
+            background-color: $primary-color;
+        }
+
+        tr:nth-child(even) td {
+            background-color: $third-color;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: $second-color;
+        }
+
+        // 테이블 th 
+        .th-count {
+            width: 100px;
+        }
+
+        .th-date {
+            width: 370px;
+        }
+
+        .th-time {
+            width: 200px;
+        }
+    }
+
+    .coupon-table {
+        margin: 0 auto;
+
+        th {
+            color: #F5F3FF;
+            font-weight: 300;
+        }
+
+        td {
+            height: 30px;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        thead {
+            height: 50px;
+            background-color: $primary-color;
+        }
+
+        tr:nth-child(even) td {
+            background-color: $third-color;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: $second-color;
+        }
+
+        // 테이블 th 
+        .th-couponName {
+            width: 370px;
+        }
+
+        .th-discount {
+            width: 100px;
+        }
+
+        .th-couponCode {
+            width: 200px;
+        }
+    }
+}

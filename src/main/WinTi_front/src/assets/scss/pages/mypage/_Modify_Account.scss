@@ -1,0 +1,175 @@
+.Modify_Account{
+
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 170px;
+    .account_text{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+
+    .user_account{
+        width: 600px; /* 너비 설정 */
+        height: 750px; /* 높이 설정 */
+        background-color: white; /* 배경색 설정 */
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 설정 */
+        border-radius: 25px; /* 모서리 둥글게 만들기 */
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        margin-bottom: 40px;
+
+        .user_header{
+
+            .user_name{
+                
+                font-size: 20px;
+                span{
+                    color: #7D3EF7;
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+            }
+
+        }
+
+        .lien{
+            border-bottom: 2px solid hsl(0, 0%, 79%);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+
+        .user_emial{
+            font-size: 17px;
+            font-weight: 600;
+            .email{
+                font-size: 25px;
+                font-weight: 200;
+                margin-bottom: 30px;
+                margin-top: 15px;
+            }
+        }
+
+        
+        .user_birthday{
+            font-size: 17px;
+            font-weight: 600;
+            .birthday{
+                font-size: 25px;
+                font-weight: 200;
+                margin-bottom: 25x;
+                margin-top: 15px;
+            }
+        }
+
+        .address_text{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .subaddress_text{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+       
+
+        .input-box-input[readonly] {
+            /* readOnly 상태일 때 원하는 색상을 지정합니다. */
+            background-color: rgb(85, 83, 83); /* 예시로 회색 배경색을 지정했습니다. */
+            /* 다른 스타일도 필요한 경우 여기에 추가합니다. */
+          }
+
+          .address_box{
+            margin-top: 10px;
+        .address_search{
+          display: flex;
+            input{
+                padding-left: 15px;
+              border: 1px solid rgb(98, 95, 99);
+              border-radius: 10px;
+              box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+              font-size: 17px;
+              height: 40px;
+              width: 400px;
+              outline: none;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 15px;
+              background-color: hsl(0, 5%, 85%);
+              margin-left: -2px;
+            }
+        
+            .address_butten{
+        
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            
+              border-radius: 6px;
+              width: 110px;
+              height: 44px;
+            
+              font-size: 16px;
+              background-color: #7d3ef7;
+              color: white;
+            }
+          }
+          input{
+            padding-left: 15px;
+            border: 1px solid rgb(98, 95, 99);
+            border-radius: 10px;
+            box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+            font-size: 17px;
+            height: 40px;
+            width: 400px;
+            outline: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+          }
+        }
+
+    }
+
+
+
+
+    .no_buutten {
+        background-color: #86898b;
+        color: hwb(0 100% 0%);
+        width: 500px;
+        height: 60px;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .ok_butten {
+        background-color: #7d3ef7;
+        color: hwb(0 100% 0%);
+        width: 500px;
+        height: 60px;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+}

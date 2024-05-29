@@ -1,0 +1,73 @@
+.payModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 약간 투명 */
+
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    margin: 15% auto;
+    /* 페이지 중앙에 위치 */
+    width: 70%;
+    /* Set the width to 70% */
+    max-height: 800px;
+    /* 80% of viewport height */
+    overflow-y: auto;
+    /* Enable scrolling if content exceeds modal height */
+    border-radius: 5px;
+    // resize: both; /* 크기 조절 가능 */
+    position: relative;
+    /* Position relative for absolute positioning of close button */
+  }
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Additional styling for buttons inside the modal */
+  .modal_button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #7D3EF7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+  }
+
+  .modal button:hover {
+    background-color: #9b3ef7;
+  }
+
+  .seatSelection_top {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+}

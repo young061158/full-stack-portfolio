@@ -1,0 +1,86 @@
+.Join2_Membership {
+  label {
+    font-size: 16px;
+    
+  }
+
+  select {
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 16px;
+    padding: 10px 30px; /* 내부 여백 설정 */
+    font-size: 15px; /* 폰트 크기 설정 */
+    border: 2px solid #ccc; /* 테두리 설정 */
+    border-radius: 6px; /* 테두리 모서리를 둥글게 만듭니다. */
+    background-color: #fff; /* 배경색 설정 */
+    appearance: none; /* 기본 드롭다운 화살표 숨김 */
+    margin-right: 20px;
+  }
+
+  /* 드롭다운 목록을 클릭했을 때 활성화되는 스타일 */
+  select:focus {
+    select:active {
+      outline: none; /* 포커스 표시 제거 */
+      border-color: hsl(211, 58%, 66%); /* 포커스 시 테두리 색상 변경 */
+    }
+  }
+
+  .address_box{
+    margin-top: 10px;
+.address_search{
+  display: flex;
+    input{
+      border: 1px solid rgb(98, 95, 99);
+      border-radius: 10px;
+      box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+      font-size: 17px;
+      height: 40px;
+      width: 400px;
+      outline: none;
+      margin-left: -0.8px;
+      margin-bottom: 15px;
+      background-color: hsl(0, 5%, 85%);
+    }
+
+    .address_butten{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      border-radius: 6px;
+      width: 110px;
+      height: 44px;
+    
+      font-size: 16px;
+      background-color: #7d3ef7;
+      color: white;
+    }
+  }
+  input{
+    border: 1px solid rgb(98, 95, 99);
+    border-radius: 10px;
+    box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+    font-size: 17px;
+    height: 40px;
+    width: 400px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .subaddress{
+    padding: 9px;
+  }
+
+}
+
+.join_text_all{
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+fieldset{
+  margin-bottom: 16px;
+}
+}

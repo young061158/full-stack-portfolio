@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+//section
+@import "section/header";
+@import "section/footer";
+
+// setting
+@import "setting/fonts";
+@import "setting/reset";
+@import "setting/commons";
+// @import "~bootstrap/scss/bootstrap";
+
+//pages
+@import "pages/login/login_main.scss";
+@import "pages/login/Join_Membership.scss";
+@import "pages/login/Join2_Membership.scss";
+@import "pages/login/Join_Membership_finish.scss";
+@import "pages/login/Find_by_ID.scss";
+@import "pages/login/Find_by_PW.scss";
+@import "pages/login//Join_Select.scss";
+@import "pages/login/Sns_Membership.scss";
+@import "pages/login/Choice_Membership.scss";
+
+
+@import "pages/main/MainBanner";
+@import "pages/main/MainOpen";
+@import "pages/main/MainTodayHot";
+@import "pages/main/MainWeekHot";
+
+
+@import "pages/main/SearchPage";
+@import "pages/main/CategoryPage";
+@import "pages/upload//mainBannerupload";
+
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+// 마이페이지
+@import "pages/mypage/MyPage_Main";
+@import "pages/mypage/Modify_Account";
+@import "pages/mypage/Modify_End";
+@import "pages/mypage/Mobile_ticket";
+@import "pages/mypage/Seller_Registration";
+@import "pages/mypage/User_Reservation";
+@import "pages/mypage/Disable_User";
+@import "pages/mypage/User_ReservationShow";
+
+
+
+// 공연 등록 page
+@import "pages/Perfomence_Add/add_common.scss";
+@import "pages/Perfomence_Add/poster.scss";
+@import "pages/Perfomence_Add/Performance_Form.scss";
+@import "pages/Perfomence_Add/Performance_add.scss";
+@import "pages/Perfomence_Add/prev.scss";
+@import "pages/Perfomence_Add/PrevImage.scss";
+@import "pages/Perfomence_Add/Caveats.scss";
+
+// 공연 상세 및 결제
+
+@import "pages/User_Reservation/ShowDetailPage.scss";
+@import "pages/User_Reservation/DetailsPage.scss";
+@import "pages/User_Reservation/SeatSelection.scss";
+@import "pages/User_Reservation/SelectPrice.scss";
+@import "pages/User_Reservation/ConfirmPayment.scss";
+@import "pages/User_Reservation/Confirmation.scss";
+@import "pages/User_Reservation/Payments.scss";
+@import "pages/User_Reservation/paymodal.scss";
+@import "pages/User_Reservation/ReviewPage.scss";
+@import "pages/User_Reservation/LocationInfo.scss";
+@import "pages/User_Reservation/BookingInfo.scss";
+@import "pages/User_Reservation/ProgressBar.scss";
+
+
+// modal 
+@import "pages/Perfomence_Add/modal/modal.scss";
+@import "pages/Perfomence_Add/modal/modal_stage.scss";
+@import "pages/Perfomence_Add/modal/modal_round.scss";
+@import "pages/Perfomence_Add/modal/modal_coupon.scss";
+@import "pages/perfomence_Add/modal/modal_actor.scss";
+@import "pages/perfomence_Add/modal/modal_poster.scss";
+
+@import "layout.scss";

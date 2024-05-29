@@ -1,0 +1,43 @@
+.Join2_Membership {
+  width: 800px;
+  height: 900px;
+  margin-left: auto;
+  /* Set left margin to auto */
+  margin-right: auto;
+
+  .join_finish {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    /* Set left margin to auto */
+    margin-right: auto;
+    text-align: center;
+
+    .finish_1 {
+      font-size: 40px;
+      font-weight: 550;
+      margin-left: auto;
+      /* Set left margin to auto */
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 45px;
+      margin-top: 120px;
+    }
+
+    .finish_2 {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 100px;
+    }
+
+    .btn-success {
+      margin-bottom: 100px;
+      width: 400px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: hsl(260, 63%, 49%);
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,383 @@
+.Join2_Membership{
+
+  width: 800px;
+  height: 1000px;
+  margin-left: auto;
+  /* Set left margin to auto */
+  margin-right: auto;
+  margin-top: 125px;
+  margin-bottom: 600px;
+
+  .img {
+    width: 418px;
+    height: 110px;
+    margin-left: auto;
+    /* Set left margin to auto */
+    margin-right: auto;
+    margin-bottom: 75px;
+    background-image: url(../../../img/join_membership/membership2.svg);
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .Join_Main {
+    width: 615px;
+    height: 970px;
+    border-radius: 4%;
+    /* 원 모양으로 만듭니다 */
+    background-color: #ffffff;
+    /* 배경 색상을 설정합니다 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* 그림자 효과를 추가합니다 */
+    margin-left: auto;
+    /* Set left margin to auto */
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding: 25px;
+  }
+
+  .footer_butten {
+    width: 400px;
+    display: flex;
+    margin-left: auto;
+    /* Set left margin to auto */
+    margin-right: auto;
+
+    .btn-success {
+      margin-left: auto;
+      /* Set left margin to auto */
+      margin-right: auto;
+      margin-bottom: 100px;
+      width: 700px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: hsl(260, 63%, 49%);
+      color: white;
+    }
+  }
+
+  fieldset {
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-around;
+      
+
+    label {
+      font-size: 18px;
+      line-height: 2rem;
+      padding: 0.2em 0.4em;
+    }
+
+    [type="radio"],
+    span {
+      vertical-align: middle;
+    }
+
+    [type="radio"] {
+      appearance: none;
+      border: max(2px, 0.1em) solid #808080;
+      border-radius: 50%;
+      width: 1.5em;
+      height: 1.5em;
+      transition: border 0.2s ease-in-out;
+    }
+
+    [type="radio"]:checked {
+      border: 0.4em solid #9b2ece;
+    }
+
+    [type="radio"]:focus-visible {
+      outline-offset: max(2px, 0.1em);
+      outline: max(2px, 0.1em) dotted #9b2ece;
+    }
+
+    [type="radio"]:hover {
+      box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+      cursor: pointer;
+    }
+
+    [type="radio"]:hover + span {
+      cursor: pointer;
+    }
+  }
+}
+//InputBox
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  input[type="text"] {
+    border: 1px solid rgb(98, 95, 99);
+    border-radius: 10px;
+    /* 둥근 테두리 */
+    box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+    /* 그림자 효과 */
+    font-size: 17px;
+    height: 40px;
+    /* 높이 조정 */
+    width: 400px;
+    /* 너비 조정 */
+    outline: none;
+    /* 포커스 효과 제거 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  input[type="text"]::placeholder {
+    color: #999;
+    /* placeholder 텍스트 색상 */
+  }
+
+  input[type="text"]:focus {
+    border-color: rgb(40, 39, 42);
+    /* 클릭 시 테두리 색상 변경 */
+    box-shadow: 0 0 10px hsla(285, 4%, 18%, 0.502);
+    /* 클릭 시 그림자 효과 변경 */
+  }
+
+  input[type="password"] {
+    border: 1px solid rgb(98, 95, 99);
+    border-radius: 10px;
+    /* 둥근 테두리 */
+    box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+    /* 그림자 효과 */
+    font-size: 17px;
+    height: 40px;
+    /* 높이 조정 */
+    width: 400px;
+    /* 너비 조정 */
+    outline: none;
+    /* 포커스 효과 제거 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  input[type="password"]::placeholder {
+    color: #999;
+    /* placeholder 텍스트 색상 */
+  }
+
+  input[type="password"]:focus {
+    border-color: rgb(40, 39, 42);
+    /* 클릭 시 테두리 색상 변경 */
+    box-shadow: 0 0 10px hsla(285, 4%, 18%, 0.502);
+    /* 클릭 시 그림자 효과 변경 */
+  }
+}
+
+.input-box-title {
+  color: #000000;
+  font-size: 17px;
+  line-height: normal;
+  font-weight: 300px;
+  cursor: default;
+  margin-top: 3px;
+}
+
+.input-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+
+  .input-box-message{
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+  }
+  .input-box-message-error{
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+  }
+  
+}
+
+.input-box-body {
+  display: flex;
+  gap: 15px;
+}
+
+.input-box-input {
+  flex: 1;
+  border: 1px solid (240, 240, 240, 1);
+  border-radius: 6px;
+  padding: 8px 16px;
+  height: 28px;
+  outline: none;
+  background-color: Inter;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.input-box-input::placeholder {
+  color: (138, 146, 166, 1);
+  font-family: Inter;
+}
+
+.input-box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6px;
+  width: 110px;
+  height: 44px;
+
+  font-size: 16px;
+  background-color: #7d3ef7;
+  color: white;
+}
+
+.input-box-button:hover {
+  background-color: hwb(228 56% 7%);
+}
+
+.input-box-button-disable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6px;
+  width: 110px;
+  height: 44px;
+
+  background-color: hsla(260, 92%, 61%, 0.288);
+
+  color: rgb(139, 139, 139);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+
+  cursor: default;
+}
+
+//읽기 전용일때 활성화
+.input-box-input[readonly] {
+  /* readOnly 상태일 때 원하는 색상을 지정합니다. */
+  background-color: hsl(0, 0%, 84%); /* 예시로 회색 배경색을 지정했습니다. */
+  /* 다른 스타일도 필요한 경우 여기에 추가합니다. */
+}
+
+.input-box-message {
+  color: rgba(58, 87, 248, 1);
+  z-index: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-box-message-error {
+  color: hsl(332, 88%, 43%);
+  margin-top: -15px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  // margin-bottom: 15px;
+}
+
+.sign-up-content-button-box {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+
+  .primary-button-lg {
+    background-color: #7d3ef7;
+    color: hwb(0 100% 0%);
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .disable-button-lg {
+    background-color: #86898b;
+    color: hwb(0 100% 0%);
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sign-up-wrapper{
+
+  .text_1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #7d3ef7;
+  }
+  .lien{
+    position: relative;
+    width: 100%; /* 수평 가로선의 전체 너비를 차지하도록 설정 */
+    height: 2px; /* 가로선의 높이를 지정 */
+    background-color: gray; /* 회색으로 설정 */
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+}
+
+
+// .sign-up-wrapper{
+//   width: 100vw;
+//   min-width: 1440px;
+//   height: 100vh;
+//   min-height: 1024px;
+// }
+
+//주소찾기 팝업
+popupDom {
+  position: fixed;
+  width: 450px !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  > div {
+    border: 1px solid #222;
+  }
+  .closeBtn {
+    position: absolute;
+    right: -35px;
+    top: -45px;
+    cursor: pointer;
+    color: white;
+  }
+}
+.modal {
+  position: fixed;
+  /* 고정 위치 */
+  z-index: 1;
+  /* 모달이 다른 요소 위에 나타나도록 설정 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 어두운 배경 색상 설정 */
+
+  h2 {
+    margin-left: 20px;
+    font-weight: 600;
+  }
+}

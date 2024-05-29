@@ -1,0 +1,78 @@
+.poster-container {
+    position: relative;
+    width: 400px;
+
+    img {
+        max-width: 320px;
+        /* 최대 너비 */
+        max-height: 460px;
+        /* 최대 높이 */
+        width: 100%;
+        /* 부모 컨테이너에 맞게 조정 */
+        height: auto;
+        /* 높이를 자동으로 조정 */
+        margin: 0 auto;
+        border: 1px solid;
+        display: block;
+        /* 가운데 정렬을 위한 속성 */
+    }
+
+    .posterImages {
+        width: 336px;
+        height: 428.8px;
+        position: relative;
+        top: 20px;
+    }
+
+    .button-cast-registration {
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        top: 550px;
+        background: black;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .icon-button {
+        width: 31.5px;
+        height: 32px;
+        left: 21.6px;
+        top: 464.4px;
+        position: absolute;
+
+        .icon-rect {
+            width: 27.56px;
+            height: 10px;
+            position: absolute;
+            background: black;
+            left: 1.97px;
+            top: 18px;
+        }
+
+        .icon-bar {
+            width: 15.75px;
+            height: 18px;
+            position: absolute;
+            background: black;
+            left: 7.88px;
+            top: 2.5px;
+        }
+    }
+
+    .text-poster-upload {
+        width: 96px;
+        height: 16.8px;
+        left: 56.4px;
+        top: 471.6px;
+        position: absolute;
+        color: black;
+        font-size: 12px;
+        font-family: Inter;
+        font-weight: 400;
+        text-align: center;
+    }
+}

@@ -1,0 +1,97 @@
+.MainWeekHotContainer {
+    margin-top: 100px;
+    width: 100%;
+    height: 950px;
+    position: relative;
+
+    h2 {
+        position: relative;
+        z-index: 11;
+        color: #a877f1;
+        font-size: 30px;
+        font-weight: bold;
+        left: 10%;
+        top: 10px;
+        width: 200px;
+    }
+
+    .mainHotCategory button {
+        position: relative;
+        width: 100px;
+        height: 35px;
+        z-index: 10;
+        background-color: #d9d9d9;
+        font-size: 20px;
+        left: 10%;
+        top: 25px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .mainHotCategory button:active,
+    .mainHotCategory button.selected {
+        background-color: #a877f1;
+    }
+
+    .weeklyHotList {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+        .weeklyHotItem {
+            margin: 10px;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .weeklyHotPoster {
+            width: 200px;
+            height: 250px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            /* 포스터와 제목 간격 조정 */
+        }
+
+        .weeklyHotTitle {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            /* 제목 가운데 정렬 */
+        }
+
+        .mainHotDate {
+            font-size: 16px;
+            text-align: center;
+            /* 날짜 가운데 정렬 */
+        }
+
+        .weeklyHotTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .weeklyHotTable td {
+            padding: 10px;
+            border: none;
+            /* 테이블 경계선 제거 */
+        }
+    }
+
+    .viewMoreButton {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

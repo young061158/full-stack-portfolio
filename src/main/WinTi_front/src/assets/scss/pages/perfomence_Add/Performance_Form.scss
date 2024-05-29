@@ -1,0 +1,258 @@
+// Performance_Form.scss
+
+// Define colors and variables
+$primary-color: #8A4AED;
+$second-color: #EFE6FF;
+$font-color: #333;
+
+// font size
+$label-size: 14px;
+$text-size: 13px;
+$button-size: 13px;
+
+
+// font weight
+$h1-weight: 550;
+$label-weight: 600;
+
+
+.data-form {
+  min-width: 430px;
+  margin-left: 5%;
+
+  //주소찾기 팝업
+  popupDom {
+    position: fixed;
+    width: 550px !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+
+    >div {
+      border: 1px solid #222;
+    }
+
+    .closeBtn {
+      position: absolute;
+      right: -35px;
+      top: -45px;
+      cursor: pointer;
+    }
+  }
+
+  .modal {
+    position: fixed;
+    /* 고정 위치 */
+    z-index: 1;
+    /* 모달이 다른 요소 위에 나타나도록 설정 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 어두운 배경 색상 설정 */
+
+    h2 {
+      margin-left: 20px;
+      font-weight: 600;
+    }
+  }
+
+  // Form
+  .performance-form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    div{
+      margin-bottom: 5px;
+    }
+
+    // Header
+    .form-header {
+      margin-bottom: 20px;
+
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: $h1-weight;
+      }
+
+      hr {
+        margin-top: 10px;
+      }
+    }
+
+    // Content
+    .form-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .input-show-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        label {
+          font-size: $label-size;
+          font-weight: $label-weight;
+        }
+
+        .input-field {
+          max-height: 35px;
+          font-size: $text-size;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+
+          &:focus {
+            border-color: $primary-color;
+            outline: none;
+          }
+        }
+
+        .input-address {
+          max-height: 35px;
+          font-size: $text-size;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+
+          &:focus {
+            border-color: $primary-color;
+            outline: none;
+          }
+        }
+      }
+
+      // Date group
+      .date-group {
+        display: flex;
+        gap: 0px;
+
+        .input-show-group {
+          flex: 1;
+        }
+
+        span {
+          font-size: $text-size;
+          margin-top: 30px;
+          margin-left: calc(30px/2 - $text-size/2);
+          margin-right: calc(30px/2 - $text-size/2);
+        }
+      }
+
+      // Genre group
+      .genre-group {
+        display: flex;
+        gap: 30px;
+
+        .input-show-group {
+          flex: 1;
+        }
+      }
+
+      // Address group
+      .address-group {
+        display: flex;
+        gap: 10px;
+
+        .input-show-group {
+          flex: 1;
+
+          .input-field {
+            background-color: $second-color;
+          }
+        }
+
+        .search-button {
+          margin-top: 24px;
+          min-width: 100px;
+          max-height: 35px;
+          font-size: $button-size;
+          line-height: normal;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          background-color: $primary-color;
+          color: white;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #5604B5;
+          }
+        }
+      }
+
+      .bank-group {
+        display: flex;
+        gap: 10px;
+
+        .input-show-group {
+          flex: 1;
+
+          select {
+            max-width: 150px;
+          }
+
+          .input-field{
+            width: 100px;
+          }
+
+          .input-account-field {
+            min-width: 300px;
+            margin-top: 20px;
+          }
+        }
+      }
+      .show-age {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      
+        label {
+          font-size: $label-size;
+          font-weight: $label-weight;
+          margin-bottom: 0; // 라벨과 입력 필드를 동일한 높이에 두기 위해 마진 제거
+        }
+      
+        .input-field {
+          width: 120px;
+          margin-right: 20px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+      
+          &:focus {
+            border-color: #6a1b9a;
+            box-shadow: 0 0 5px rgba(106, 27, 154, 0.5);
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .div-btn{
+    display: flex;
+    flex-direction: column;
+    .showSumit {
+      min-width: 200px;
+      min-height: 30px;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 5px;
+      font-size: $button-size;
+      
+      
+      &:hover {
+        background-color: #5604B5;
+      }
+    }
+  }
+}

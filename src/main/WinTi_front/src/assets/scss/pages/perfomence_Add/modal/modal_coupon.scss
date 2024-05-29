@@ -1,0 +1,169 @@
+// Define variables
+$primary-color: #8A4AED;
+$second-color: #EFE6FF;
+$third-color: #DDDDDD;
+$fourth-color: #8C8C8C;
+.coupon-modal{
+    .coupon-title{
+        position: absolute;
+        width: 100%;
+        span{
+            position: relative;
+            font-size: 13px;
+            font-weight: 900;
+        }
+        .coupon-add{
+        left :10px; 
+        }
+        .coupon-list{
+        left: 340px
+        }
+    }
+    .coupons-setting{
+        display: flex;
+        position: relative;
+        top: 30px;
+        height: 490px;
+        .inner-box {
+            width: 360px;
+            left : 115px;
+            position: absolute;
+            background: white;
+        }
+        .coupon{
+            position: absolute;
+            margin: 0;
+        }
+        .discounts{
+            position: relative;
+            display: block;
+            height: 50px;
+            align-content: center;
+            border-top: 0.5px $third-color solid;
+            &:last-child {
+                border-bottom: 0.5px $third-color solid;
+            }
+            .coupon-name{
+                top : 15px;
+                left: 15px;
+            }
+            .coupon-discount{
+                font-weight: 800;
+                top : 15px;
+                right: 80px;
+            }
+            .coupon-checkbox{
+                top : 19px;
+                right: 15px;
+            }
+        }
+
+        .coupon-box {
+            height: 460px;
+            width: 500px;
+            position: relative;
+            border: 1px #777777 solid;
+
+            .background-box {
+                text-align: center;
+                align-content: center;
+                width: 100px;
+                background: #F5F6F8;
+                position: absolute;
+                left : 15px;
+                border-top: 0.5px $third-color solid;
+                border-bottom: 0.5px $third-color solid;
+                }
+            .defalut{
+                top: 25px;
+                height: 300px;
+            }
+            .additional{
+                top: 340px;
+                height: 90px;
+            }
+        }
+        .inner-box-1 {
+            height: 300px;
+            top : 25px;
+            .discounts{
+                height: calc(100%/6);
+            }
+        }
+        .inner-box-2{
+            height: 90px;
+            top : 340px;
+            border-top: 0.5px $third-color solid;
+            border-bottom: 0.5px $third-color solid;
+            .discounts{
+                height: 90px;
+                input:focus {
+                    outline: none;
+                }
+                .coupon-name{
+                    width: 135px;
+                    top : 37px;
+                    font-weight: 400;
+                    border-width: 0 0 1px;
+                }
+                .coupon-discount{
+                    width: 60px;
+                    top : 37px;
+                    font-weight: 400;
+                    text-align: right;
+                    border-width: 0 0 1px;
+                }
+                .percent{
+                    top : 35px;
+                    right: 60px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .coupon-btn{
+                    width: 30px;
+                    height: 30px;
+                    top : 30px;
+                    right: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .additional-list{
+            width: 230px;
+            height: 460px;
+            margin-left: 6px;
+            border: 1px #777777 solid;
+            .ul-additional{
+                margin:5px;
+                padding-left: 0px;
+                .li-additional {
+                    margin: 5px;
+                    padding: 3px;
+                    border: 1px solid;
+                    border-radius: 10px;
+                }
+                span{
+                    display: inline-block;
+                    padding: 3px;
+                    margin: 0px;
+                    font-size: 13px;
+                    text-align: center;
+                    align-content: center;
+                }
+                .li-couponName {
+                    width: 135px;
+                    font-weight: 600;
+                }
+                .li-discount {
+                    font-weight: 600;
+                    width: 40px;
+                }
+                .li-remove {    
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

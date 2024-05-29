@@ -1,0 +1,144 @@
+.Login_Main {
+  width: 400px;
+  height: 500px;
+  //background-color: #d3bbbb;
+  margin-left: auto;
+  /* Set left margin to auto */
+  margin-right: auto;
+  margin-top: 170px;
+  margin-bottom: 200px;
+  .logo {
+    background-image: url(../../../img/logo2/logoMain.png);
+    background-size: cover;
+    /* 배경 이미지를 요소에 맞춰서 늘립니다. */
+    background-position: center;
+    /* 배경 이미지를 가운데 정렬합니다. */
+    height: 50px;
+    width: 150px;
+    margin-left: auto;
+    /* Set left margin to auto */
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  input[type="text"]::placeholder {
+    color: #999;
+    /* placeholder 텍스트 색상 */
+  }
+
+  input[type="text"]:focus {
+    border-color: rgb(40, 39, 42);
+    /* 클릭 시 테두리 색상 변경 */
+    box-shadow: 0 0 10px hsla(285, 4%, 18%, 0.502);
+    /* 클릭 시 그림자 효과 변경 */
+  }
+
+  flex: 0;
+
+  // .sign-in-content-inputbox
+
+  .Login_a {
+    width: 300px;
+    a {
+      margin: 3px;
+    }
+  }
+}
+
+.Login_butten {
+  height: 100px;
+  width: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  .login {
+    text-align: center;
+    background-color: #7d3ef7;
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(98, 95, 99);
+    border-radius: 10px;
+    /* 둥근 테두리 */
+    box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+    /* 그림자 효과 */
+    font-size: 16px;
+    height: 50px;
+    /* 높이 조정 */
+    width: 450px;
+    /* 너비 조정 */
+    outline: none;
+    /* 포커스 효과 제거 */
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sign-in-content-sns-in-box {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+
+  .sign-in-content-sns-sign-in-title {
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+
+  .sign-in-content-sns-sign-in-button-box {
+    display: flex;
+    justify-content: space-evenly;
+
+    .kakao-sign-in-button {
+      background-image: url(../../../img/login_logo/kakaologo.svg);
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-size: contain;
+    }
+
+    .naver-sign-in-button {
+      background-image: url(../../../img/login_logo/naverlogo.svg);
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      background-size: contain;
+    }
+
+    .google-sign-in-button {
+      background-image: url(../../../img/login_logo/googlelogo.svg);
+      width: 50px;
+      height: 50px;
+      background-size: contain;
+    }
+  }
+}
+
+.line {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 1px;
+  /* Set the height to 1 pixel for a thin line */
+  background-color: hsl(0, 0%, 1%);
+  /* Set the background color of the line */
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.Login_a {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  /* Flexbox를 사용하여 요소들을 가로로 정렬합니다. */
+  justify-content: space-between;
+  margin-bottom: 170px;
+
+  a {
+    display: flex;
+    /* Flexbox를 사용하여 요소들을 가로로 정렬합니다. */
+    justify-content: space-between;
+    margin-bottom: 170px;
+  }
+}

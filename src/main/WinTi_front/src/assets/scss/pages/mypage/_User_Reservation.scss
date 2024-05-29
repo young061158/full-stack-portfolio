@@ -1,0 +1,133 @@
+/* Seller_Registration.css */
+.user_Registration {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+/* Headings and Side Text Styling */
+.user_Registration .head {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.user_Registration .headSide {
+    font-size: 1em;
+    color: #666;
+    text-align: right;
+}
+
+.user_Registration .headSide span {
+    font-weight: bold;
+}
+
+/* Line Styling */
+.user_Registration .line {
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* Select Box Styling */
+.user_Registration .selectBox {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    height: 2em;
+    border: 2px solid #7d3ef7;
+    border-radius: 25px;
+    width: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* Dropdown Styling */
+.user_Registration select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 25px;
+    color: #7d3ef7;
+}
+
+/* Table Styling */
+.user_Registration table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    /* Added margin to avoid overlap with selectBox */
+}
+
+.user_Registration th,
+.user_Registration td {
+    padding: 12px;
+    text-align: center;
+    /* Center-align all table header and data cells */
+    border-bottom: 1px solid black;
+}
+
+.user_Registration th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.user_Registration tr:hover {
+    background-color: #f9f9f9;
+}
+
+.user_Registration td {
+    font-size: 1em;
+}
+
+/* Button Styling */
+.myShowBtn {
+    border: 2px solid #7d3ef7;
+    /* Purple border */
+    color: #7d3ef7;
+    /* Purple text */
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.myShowBtn:hover {
+    background-color: #7d3ef7;
+    /* Purple background on hover */
+    color: white;
+    /* White text on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .user_Registration .head {
+        font-size: 1.5em;
+    }
+
+    .user_Registration .headSide {
+        font-size: 1em;
+    }
+
+    .user_Registration th,
+    .user_Registration td {
+        padding: 8px;
+    }
+
+    .user_Registration .selectBox {
+        position: static;
+        /* Makes it flow with the document */
+        margin: 10px auto;
+        /* Center align */
+        width: 100%;
+        max-width: 200px;
+        /* Adjust width as needed */
+    }
+}

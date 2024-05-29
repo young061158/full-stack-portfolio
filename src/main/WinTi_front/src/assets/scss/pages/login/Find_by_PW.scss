@@ -1,0 +1,121 @@
+.Find_by_PW {
+  width: 400px;
+  height: 700px;
+  margin: 160px auto;
+  /* 가운데 정렬을 위해 margin을 auto로 설정 */
+  display: flex;
+  /* 부모 요소를 flex로 설정 */
+  flex-direction: column;
+  /* 자식 요소들을 세로 방향으로 정렬 */
+  align-items: center;
+
+  /* 수평 방향으로 가운데 정렬 */
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+  }
+
+  .Find_by_PW_form {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    input {
+      align-items: center;
+      /* 입력 요소를 수평 방향으로 가운데 정렬 */
+      margin: 10px;
+      font-size: 15px;
+      height: 40px;
+      width: 80%;
+      border-radius: 10px;
+      border-color: #505050;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid rgb(98, 95, 99);
+      border-radius: 10px;
+      /* 둥근 테두리 */
+      box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+      /* 그림자 효과 */
+      font-size: 14px;
+      height: 40px;
+      /* 높이 조정 */
+      width: 300px;
+      /* 너비 조정 */
+      outline: none;
+      /* 포커스 효과 제거 */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input[type="text"]::placeholder {
+      color: #999;
+      /* placeholder 텍스트 색상 */
+    }
+
+    input[type="text"]:focus {
+      border-color: rgb(40, 39, 42);
+      /* 클릭 시 테두리 색상 변경 */
+      box-shadow: 0 0 10px hsla(285, 4%, 18%, 0.502);
+      /* 클릭 시 그림자 효과 변경 */
+    }
+  }
+
+  .find_pw_butten_true {
+    background-color: #7d3ef7;
+    color: hwb(0 100% 0%);
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .find_pw_butten_false {
+    background-color: rgba(151, 128, 197, 0.507);
+    color: hwb(0 100% 0%);
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .span-mail {
+    margin: 20px;
+    font-size: 20px;
+    color: red;
+    font-weight: 300;
+  }
+
+  .lien {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 1px;
+    /* Set the height to 1 pixel for a thin line */
+    background-color: rgb(190, 190, 190);
+    /* Set the background color of the line */
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin: 30px;
+  }
+}
+
+span {
+  margin: 10px;
+}

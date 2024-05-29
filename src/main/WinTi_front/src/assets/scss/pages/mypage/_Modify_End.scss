@@ -1,0 +1,60 @@
+.Modify_End{
+
+    margin-top: 130px;
+    margin-bottom: 200px;
+    text-align: center;
+
+    img{
+        width: 150px;
+        margin: 50px;
+    }
+    
+    .text_1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 10px;
+
+    }
+
+    .go_butten{
+        height: 200px;
+        width: 800px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 35px;
+        flex-direction: column;
+
+        button{
+            width: 300px;
+            text-align: center;
+            background-color: #7d3ef7;
+            color: white;
+            padding: 10px;
+            border: 1px solid rgb(98, 95, 99);
+            border-radius: 10px;
+            /* 둥근 테두리 */
+            box-shadow: 0 2px 7px hsla(0, 4%, 78%, 0.58);
+            /* 그림자 효과 */
+            font-size: 16px;
+            height: 50px;
+            /* 높이 조정 */
+            width: 450px;
+            /* 너비 조정 */
+            outline: none;
+            /* 포커스 효과 제거 */
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .go_home_butten{
+            width: 400px;
+        }
+        .go_my_page_butten{
+            width: 400px;
+        }
+    }
+
+
+}

@@ -1,0 +1,216 @@
+// Define variables
+$primary-color: #8A4AED;
+$second-color: #EFE6FF;
+$third-color: #DDDDDD;
+$fourth-color: #8C8C8C;
+
+$seat-s : #ffffff;
+$seat-r : #007bff;
+$seat-vip : #ffc107;
+
+// stage form
+.seat-modal {
+  display: flex;
+
+  input {
+    font-size: 12px;
+  }
+
+  .stage-box {
+    background-color: $second-color;
+    width: 500px;
+    min-height: 480px;
+    max-height: 580px;
+    border-radius: 16px;
+    padding: 10px;
+    overflow: auto;
+
+    .instruction {
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .stage {
+      width: 400px;
+      height: 100px;
+      margin: 20px auto;
+      font-size: 20px;
+      border-radius: 16px;
+      text-align: center;
+      align-content: center;
+      background-color: $fourth-color;
+      color: #ffffff;
+    }
+
+    .seat-box {
+      position: relative;
+      text-align: center;
+      width: 400px;
+      margin: 0 auto;
+
+      .seat.s {
+        background-color: $seat-s;
+        color: black; // For better readability
+      }
+
+      .seat.r {
+        background-color: $seat-r;
+        color: black; // For better readability
+      }
+
+      .seat.vip {
+        background-color: $seat-vip;
+        color: black; // For better readability
+      }
+
+      .seat.empty {
+        background-color: $second-color;
+        color: EFE6FF; // For better readability
+      }
+
+      .seatInfo {
+        position: absolute;
+        margin: 0px;
+        left: -30px;
+      }
+
+      .seat {
+        display: inline-block;
+        border-radius: 5px;
+        margin: 3px;
+        background: white;
+
+      }
+
+      .seat-content {
+        display: inline-block;
+        margin: 0px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .settings-container {
+    width: 231px;
+    height: 500px;
+    background-color: #FFFFFF;
+    margin-left: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+
+    .setting-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .input-group {
+      display: flex;
+      margin-top: 10px;
+      gap: 20px;
+
+      .col-setting,
+      .row-setting {
+        flex: 1;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input {
+          width: 90%;
+          height: 30px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+
+          &:focus {
+            outline: none;
+            border-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .max-purchase-seating {
+      margin-top: 10px;
+      font-weight: bold;
+
+      input {
+        width: 100%;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        &:focus {
+          outline: none;
+          border-color: $primary-color;
+        }
+      }
+
+      .caveats {
+        font-size: 10px;
+        color: #8C8C8C;
+      }
+    }
+
+    .seat-pricing {
+      margin-top: 20px;
+
+      .seat-type {
+        margin-bottom: 10px;
+
+        label {
+          display: block;
+          position: relative;
+
+          .square {
+            display: inline-block;
+            position: absolute;
+            top: 4px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+          }
+
+          .square-s {
+            background: $seat-s;
+          }
+
+          .square-r {
+            background: $seat-r;
+          }
+
+          .square-vip {
+            background: $seat-vip;
+          }
+
+          .square-empty {
+            background: $second-color;
+          }
+
+          input[type="radio"] {
+            margin-right: 10px;
+          }
+
+          input[type="text"] {
+            width: 60%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            &:focus {
+              outline: none;
+              border-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

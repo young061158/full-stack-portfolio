@@ -1,0 +1,183 @@
+.seatSelectionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .stage_seating {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .seat.reserved {
+    background-color: black;
+    color: white;
+    cursor: not-allowed;
+  }
+
+  .content-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+
+
+
+
+  .select-box {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #777;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .content-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .stage_seating {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stage {
+    width: 100%;
+    height: 50px;
+    background-color: #888;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .seat-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .row-label {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .seat-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seat-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .seat.r {
+    background-color: #007bff;
+    color: white; // For better readability
+  }
+
+  .seat.vip {
+    background-color: #ffc107;
+    color: black; // For better readability
+  }
+
+  .seat.empty {
+    background-color: lightgray;
+    cursor: not-allowed;
+  }
+
+  .seat.reserved {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+
+
+  .seat.selected {
+    background-color: #888;
+  }
+
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  .pricing-info,
+  .seat-selection {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+
+  .pricing-info .box-content,
+  .member,
+  .seat-selection .member3,
+  .seat-selection .member4 {
+    margin-bottom: 20px;
+  }
+
+  .next-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+
+  .next-button .modal_button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+}

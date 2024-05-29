@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
+  // -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  // scrollbar-width: none; /* 파이어폭스 */
+  // ::-webkit-scrollbar {
+  //   display: none;
+  // }
+}
+
+/* contents wrap */
+.contWrap {
+  max-width: 1720px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 15px;
+  display: flex;
+  min-height: calc(100vh - 360px);
+  flex-direction: column;
+}

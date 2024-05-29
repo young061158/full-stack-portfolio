@@ -1,0 +1,70 @@
+.MobileTicket {
+    width: 100%;
+
+
+
+    .ticket1th img {
+        display: block;
+        margin: 1rem auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+
+
+    h3 {
+        color: #8a4aed;
+        text-align: center;
+    }
+
+
+
+    .ticket2th {
+        margin: 0.5rem 0;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .ticket3th,
+    .ticket4th,
+    .ticket5th,
+    .ticket6th,
+    .ticket7th {
+        margin: 0.5rem 2.5rem;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .ticket8th {
+        margin: 0.5rem 2.5rem;
+        text-align: left;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .ticket9th {
+        display: flex;
+        justify-content: flex-end;
+        /* 이미지를 오른쪽으로 정렬 */
+        margin: 0rem 3rem;
+        text-align: right;
+    }
+
+    .ticket9th img {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,138 @@
+.text_main_choice_member{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Choice_Membership{
+    width: 700px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 300px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;  /* 모서리를 둥글게 만듭니다 */
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);  /* 그림자 효과를 추가합니다 */
+    align-items: center;
+
+
+
+    .app_login{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+
+        .app_png{
+            background-size: cover;
+            /* 배경 이미지를 요소에 맞춰서 늘립니다. */
+            background-position: center;
+            /* 배경 이미지를 가운데 정렬합니다. */
+            height: 70px;
+            width: 210px;
+            margin-left: auto;
+            /* Set left margin to auto */
+            margin-right: auto;
+            margin-bottom: 40px;
+            background-image: url(../../../img/logo2/logoMain.png);
+            margin-top: 40px;
+            cursor: pointer;
+
+        }
+        .text{
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+    }
+
+
+    .lien{
+        width: 2px;
+        height: 90%;  /* 높이를 100%로 설정하여 부모 요소의 높이를 채웁니다 */
+        background-color: hsl(0, 0%, 72%);  /* 선의 색상을 검정색으로 설정합니다 */
+        //  position: absolute;  /* 절대 위치를 사용하여 페이지 내 원하는 위치에 선을 배치할 수 있습니다 */
+        //  left: 50%;  /* 예시로 페이지의 중앙에 위치시키는 코드입니다 */
+    }
+
+
+
+    .sign-in-content-sns-sign-in-button-box_choice{
+
+        display: flex;
+    flex-direction: column;
+
+    .kakao{
+        background-color: rgba(253, 220, 63, 1);
+        color: rgba(61, 58, 53, 1);
+        width: 230px;
+        height: 60px;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        border-radius: 10px;  /* 모서리를 둥글게 만듭니다 */
+        box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);  /* 그림자 효과를 추가합니다 */
+
+        .kakao-sign-in-button {
+            margin-right: 15px;
+            background-image: url(../../../img/login_logo/kakaologo.svg);
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-size: contain;
+          }
+
+          .kakao_text{
+            font-size: 17px;
+            font-weight: 600;
+          }
+    }
+
+
+    .naver{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgba(69, 182, 73, 1);
+        color: white;
+        width: 230px;
+        height: 60px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        border-radius: 10px;  /* 모서리를 둥글게 만듭니다 */
+        box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);  /* 그림자 효과를 추가합니다 */
+
+        .naver-sign-in-button {
+            margin-right: 15px;
+            background-image: url(../../../img/login_logo/naverlogo.svg);
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-size: contain;
+          }
+
+          .naver_text{
+            font-size: 17px;
+            font-weight: 600;
+          }
+    }
+    .sign-in-content-sns-sign-in-title{
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+}
+    
+}
